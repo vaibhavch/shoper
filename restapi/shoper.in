@@ -1,0 +1,23 @@
+
+server {
+
+
+    server_name shoper.in   www.shoper.in;
+
+
+    access_log /var/log/nginx/shoper.in.access.log rt_cache; 
+    error_log /var/log/nginx/shoper.in.error.log;
+
+
+    root /var/www/shoper.in/htdocs/soon2/;
+    
+    
+
+    index index.php index.html index.htm;
+
+
+    include common/php.conf;      
+    
+    include common/locations.conf;
+    include /var/www/shoper.in/conf/nginx/*.conf;
+}

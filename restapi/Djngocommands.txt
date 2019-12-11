@@ -1,0 +1,25 @@
+pip3 install djangorestframework
+pip3 install django-cors-headers
+pip3 install django-haystack
+pip3 install django-material 
+pip3 install drf-haystack
+pip3 install gunicorn
+
+sudo apt-get install mysql-server libmysqlclient-dev
+/etc/mysql/my.cnf  -  bind-address = 0.0.0.0
+service mysql restart
+mysql -u root -p -h localhost -P 3306
+use mysql
+GRANT ALL ON *.* to root@'%' IDENTIFIED BY 'mypassword';
+FLUSH PRIVILEGES;
+
+https://github.com/PyMySQL/mysqlclient-python
+pip3 install mysqlclient
+
+python3 manage.py runserver localhost:9000
+
+/etc/apache2/httpd.conf - change apache port
+sudo ln -s /usr/share/phpmyadmin /var/www/
+Include /etc/phpmyadmin/apache.conf
+
+sudo apt-get install libjpeg-dev
