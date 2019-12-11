@@ -1,0 +1,99 @@
+
+<div data-page="address" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Address</div>
+      <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="page-content">
+
+      <div class="content-block-title">Fill </div>
+
+
+<form id="addressform">
+
+  <div class="list-block" ng-show="addressdatashow">
+      <ul>
+
+        <li ng-repeat="address in addressdata">
+          <label class="label-radio item-content">
+            <input type="radio" name="address-radio" value="{{address.id}}" />
+            <div class="item-media"><i class="icon icon-form-radio"></i></div>
+            <div class="item-inner">
+              <div class="item-title titlewrap">{{address.area1}}, {{address.area2}}, {{address.landmark}}</div>
+            </div>
+          </label>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <div class="list-block inputs-list">
+      <ul>
+        <li class="align-top">
+         <div class="item-content">
+           <div class="item-media"><i class="icon icon-form-comment"></i></div>
+           <div class="item-inner">
+             <div class="item-title label">Name</div>
+             <div class="item-input">
+               <input type="text" name="name">
+             </div>
+           </div>
+         </div>
+       </li>
+
+         <li class="align-top">
+          <div class="item-content">
+            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+            <div class="item-inner">
+              <div class="item-title label">Address 1</div>
+              <div class="item-input">
+                <textarea class="resizable" name="address1"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="align-top">
+          <div class="item-content">
+            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+            <div class="item-inner">
+              <div class="item-title label">Address 2</div>
+              <div class="item-input">
+                <textarea class="resizable" name="address2"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="align-top">
+          <div class="item-content">
+            <div class="item-media"><i class="icon icon-form-comment"></i></div>
+            <div class="item-inner">
+              <div class="item-title label">Landmark</div>
+              <div class="item-input">
+                <textarea class="resizable" name="landmark"></textarea>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <p class="buttons-row"><a href="#" id="newaddress" class="button button-big color-green" ng-click="paymentpageload()">Submit</a></p>
+
+
+
+
+        </ul>
+      </div>
+    </form>
+
+    </div>
+
+
+
+  </div>
+</div>

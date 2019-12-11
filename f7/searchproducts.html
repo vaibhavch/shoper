@@ -1,0 +1,34 @@
+<div class="picker-modal" style="height:200px;">
+
+
+    <div class="picker-modal-inner">
+
+        <div class="list-block media-list" >
+              <ul>
+
+                  <div class="item-content">
+                    <div class="item-media"><img ng-src="http://192.168.0.2/bimages/images/{{searchproduct.image}}.jpg" width="80"/></img></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">{{searchproduct.name}}</div>
+                        <div id="noclick" class="item-after" style="font-size: 25px;" ng-show="checkCart(searchproduct)"> <i id="noclick" class="ion-ios-arrow-up" ng-click="addItem(searchproduct)"></i> </div>
+                      </div>
+                      <div class="counter">
+                         <div class="item-subtitle">{{searchproduct.quantity}}</div>
+                         <div id="noclick" class="item-after" style="font-size: 20px; padding-right: 1.5px;" ng-bind="checkQty(searchproduct)" ng-show="checkCart(searchproduct)"></div>
+                         <div id="noclick" class="item-after" style="font-size: 25px;" ng-hide="checkCart(searchproduct)"> <i id="noclick" class="ion-plus-circled" ng-click="addItem(searchproduct)" ></i> </div>
+                      </div>
+                      <div class="down">
+                         <div class="item-text">{{searchproduct.sp}}</div>
+                         <div id="noclick" class="item-after" style="font-size: 25px;" ng-show="checkCart(searchproduct)"> <i id="noclick" class="ion-ios-arrow-down" ng-click="minusItem(searchproduct)"></i></div>
+                      </div>
+
+                    </div>
+                  </div>
+
+              </ul>
+        </div>
+
+
+    </div>
+  </div>

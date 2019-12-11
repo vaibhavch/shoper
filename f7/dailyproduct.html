@@ -1,0 +1,97 @@
+
+<div data-page="daiyproduct" id="dailyproduct" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">{{dailyproductname}}</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="page-content">
+
+<form id="dailyproductform">
+
+    <div class="card">
+      <div class="card-content">
+        <div class="card-content-inner">{{dailyproductstext}}</div>
+      </div>
+    </div>
+
+   <p>Select quantity</p>
+    <div class="item-input">
+    <div class="range-slider">
+      <input type="range" name="quantity" min="0" max="10" step="1" value="1">
+    </div>
+  </div>
+
+   <h4 id="qtynum" style="padding-left: 50%;``">1</h4>
+
+    <div class="list-block" ng-show="dailyshowpicker">
+   <ul>
+     <li>
+       <div class="item-content">
+         <div class="item-inner">
+           <div id="dailydropdown" class="item-input">
+             <input type="text" name="brand" placeholder="Select" readonly id="picker-device">
+           </div>
+         </div>
+       </div>
+     </li>
+   </ul>
+ </div>
+ <div class="list-block" ng-show="dailyshowpicker">
+ <ul>
+ <li ng-repeat="qty in dailyuniqueQty">
+      <label class="label-radio item-content">
+        <input type="radio" name="qtyradio" value="{{qty}}">
+        <div class="item-media">
+          <i class="icon icon-form-radio"></i>
+        </div>
+        <div class="item-inner">
+          <div class="item-title">{{qty}}</div>
+        </div>
+      </label>
+    </li>
+</ul>
+</div>
+
+
+
+<div class="list-block" id="defaultdate">
+<ul >
+<li>
+     <label class="label-radio item-content" >
+       <input type="radio" name="periodradio" value="DL" >
+       <div class="item-media">
+         <i class="icon icon-form-radio"></i>
+       </div>
+       <div class="item-inner">
+         <div class="item-title">Daily</div>
+       </div>
+     </label>
+   </li>
+
+</ul>
+</div>
+
+
+<div class="list-block" id="customdate" ng-show="dailyshowpicker">
+  <ul>
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input" >
+            <input type="text" name="daterange" placeholder="Select multiple dates" readonly="readonly" id="ks-calendar-multiple"/>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</form>
+
+<a href="#" ng-click="dailyprocesscart()" class="button button-fill button-raised" style="margin-right: 15px;margin-left: 15px;">Submit</a>
+
+  </div>
+</div>

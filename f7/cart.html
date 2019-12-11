@@ -1,0 +1,61 @@
+
+<div data-page="cart" class="page with-subnavbar">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="#" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Cart</div>
+
+    </div>
+  </div>
+
+
+<div class="toolbar toolbar-bottom" ng-click="processcart()" ng-show="grocerycheck()">
+  <div class="toolbar-inner" style="font-size: 15px;">
+        <a href="#" class="link">Total</a>
+        <a href="#" class="link">Rs.{{total()}}</a>
+        <a href="#" class="link icon-only"><i class="ion-arrow-right-c" style="font-size: 40px;"></i></a>
+  </div>
+</div>
+
+<i class="ion-android-sad" style="font-size: 100px;left: 40%;position: absolute;  bottom: 50%;padding-bottom: 20px;" ng-hide="grocerycheck()"></i>
+<h4 style=" bottom: 50%;position: absolute;left: 30%;" ng-hide="grocerycheck()">You have to Add Something</h4>
+<a href="index.html" ng-hide="grocerycheck()" class="button button-fill button-raised" style="margin-right: 15px;margin-left: 15px;">Explore</a>
+
+
+<div class="page-content">
+
+
+      <div class="list-block media-list">
+      <ul>
+
+        <li class="swipeout" ng-repeat="product in invoice.items">
+          <div class="item-content swipeout-content">
+            <div class="item-media"><img ng-src="http://192.168.0.2/bimages/images/{{product.img}}.jpg" width="80"/></div>
+            <div class="item-inner">
+              <div class="item-title-row">
+                <div class="item-title">{{product.name}}</div>
+                <div class="item-after" style="font-size: 25px;"> <i class="ion-ios-arrow-up green" ng-click="addItem(product)"></i> </div>
+              </div>
+              <div class="counter">
+                 <div class="item-subtitle">{{product.quantity}}</div>
+                 <div class="item-after" style="font-size: 20px; padding-right: 1.5px;" ng-bind="checkQty(product)"></div>
+
+              </div>
+              <div class="down">
+                   <div class="item-text">{{product.sp | currency:"₹"}}</div>
+                   <div class="item-after" style="font-size: 25px;"> <i class="ion-ios-arrow-down green" ng-click="minusItem(product)"></i></div>
+
+              </div>
+
+            </div></div>
+            <div class="swipeout-actions-right"><a href="#" ng-click ="removeItem($index)" class="swipeout-delete">Delete</a></div>
+          </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+
+  </div>
+</div>

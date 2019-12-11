@@ -1,0 +1,153 @@
+[
+  {
+    "cat": "freshmart",
+    "name": "Fruits",
+    "dname": "Fruits",
+    "img": "img/cat2/Fruits.jpg"
+  },
+  {
+    "cat": "freshmart",
+    "name": "Vegetables",
+    "dname": "Vegetables",
+    "img": "img/cat2/Vegetables.jpg"
+  },
+  {
+    "cat": "freshmart",
+    "name": "Dairy & Eggs",
+    "dname": "Dairy Eggs",
+    "img": "img/cat2/Dairy & Eggs.jpg"
+  },
+  {
+    "cat": "Groceries",
+    "name": "Dals & Pulses",
+    "dname": "Dals Pulses",
+    "img": "img/cat2/Vegetables.jpg"
+  },
+  {
+    "cat": "Groceries",
+    "name": "Masalas & Spices",
+    "dname": "Masalas Spices",
+    "img": "img/cat2/Dals & Pulses.jpg"
+  },
+  {
+    "cat": "Groceries",
+    "name": "Oils & Ghee",
+    "dname": "Oils Ghee",
+    "img": "img/cat2/Oils & Ghee.jpg"
+  },
+  {
+    "cat": "Groceries",
+    "name": "Flours & Sooji",
+    "dname": "Flours Sooji",
+    "img": "img/cat2/Flours & sooji.jpg"
+  },
+  {
+    "cat": "Personal Care",
+    "name": "Personal Hygiene",
+    "dname": "Personal Hygiene",
+    "img": "img/cat2/Personal Hygiene.jpg"
+  },
+  {
+    "cat": "Personal Care",
+    "name": "Deos & Perfumes",
+    "dname": "Deos Perfumes",
+    "img": "img/cat2/Deos & Perfumes.jpg"
+  },
+  {
+    "cat": "Personal Care",
+    "name": "Men Care",
+    "dname": "Men Care",
+    "img": "img/cat2/Men Care.jpg"
+  },
+  {
+    "cat": "Personal Care",
+    "name": "Women Care",
+    "dname": "Women Care",
+    "img": "img/cat2/Women Care.jpg"
+  },
+
+  {
+    "cat": "Personal Care",
+    "name": "Baby Care",
+    "dname": "Baby Care",
+    "img": "img/cat2/Baby Care.jpg"
+  },
+  {
+    "cat": "Personal Care",
+    "name": "Personal Accessories",
+    "dname": "Personal Accessories",
+    "img": "img/cat2/Personal Accessories.jpg"
+  },
+  {
+    "cat": "Home Care",
+    "name": "Laundry",
+    "dname": "Laundry",
+    "img": "img/cat2/Vegetables.jpg"
+  },
+  {
+    "cat": "Home Care",
+    "name": "Home Cleaning",
+    "dname": "Home Cleaning",
+    "img": "img/cat2/Laundry.jpg"
+  },
+  {
+    "cat": "Home Care",
+    "name": "Fresheners & Disposables",
+    "dname": "Fresheners Disposables",
+    "img": "img/cat2/Fresheners & Disposables.jpg"
+  },
+  {
+    "cat": "Home Care",
+    "name": "Pooja Needs",
+    "dname": "Pooja Needs",
+    "img": "img/cat2/Pooja Needs.jpg"
+  },
+  {
+    "cat": "Home Care",
+    "name": "Electricals",
+    "dname": "Electricals",
+    "img": "img/cat2/Electricals.jpg"
+  },
+  {
+    "cat": "Home Care",
+    "name": "Cleaning Accessories",
+    "dname": "Cleaning Accessories",
+    "img": "img/cat2/Cleaning Accessories.jpg"
+  },
+  {
+    "cat": "Conveniences",
+    "name": "Tea & Coffee",
+    "dname": "Tea Coffee",
+    "img": "img/cat2/Tea & Coffee.jpg"
+  },
+  {
+    "cat": "Conveniences",
+    "name": "Energy & Health Drinks",
+   "dname": "Energy Health Drinks",
+    "img": "img/cat2/Energy & Health Drinks.jpg"
+  },
+  {
+    "cat": "Conveniences",
+    "name": "Jams & Pickles",
+    "dname": "Jams Pickles",
+    "img": "img/cat2/Jams & Pickles.jpg"
+  },
+  {
+    "cat": "Conveniences",
+    "name": "Cereals & Noodles",
+    "dname": "Cereals Noodles",
+    "img": "img/cat2/Cereals & Noodles.jpg"
+  },
+  {
+    "cat": "Conveniences",
+    "name": "Lite Bits",
+    "dname": "Lite Bits",
+    "img": "img/cat2/Lite Bits.jpg"
+  },
+  {
+    "cat": "Conveniences",
+    "name": "Fruit Drinks",
+    "dname": "Fruit Drinks",
+    "img": "img/cat2/Fruit Drinks.jpg"
+  }
+]

@@ -1,0 +1,63 @@
+<div data-page="products"  class="page with-subnavbar">
+  <div class="navbar productpagewhite">
+    <div class="navbar-inner">
+      <div class="left"><a href="#" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">{{catname}}</div>
+    </div>
+  </div>
+
+<div class="toolbar tabbar tabbar-scrollable swiper-container">
+    <div class="toolbar-inner swiper-wrapper">
+
+        <a href="#tab{{$index+1}}" class="tab-link active swiper-slide" ng-repeat="name in uniqueNames">{{name}}</a>
+  </div>
+</div>
+
+<div class="toolbar toolbar-bottom" ng-show="grocerycheck()"  ng-click="cartPage()">
+    <div class="toolbar-inner">
+      <a href="#" class="link">
+         <i class="icon ion-android-cart" style="font-size: 25px;"></i>
+           <div class="cartqtyproduct"> <span class="badge bg-red" style="font-size: 15px;">{{invoice.items.length}}</span> </div>
+      </a>
+      <a href="#" class="link" style="font-size: 20px;">Next</a>
+      <a href="#" class="link" style="font-size: 25px;"><i class="ion-arrow-right-c" style="font-size: 40px;"></i></a>
+  </div>
+  </div>
+
+  <div class="tabs-swipeable-wrap">
+
+    <div class="tabs">
+        <div id="tab{{$index+1}}" class="page-content tab" ng-repeat="name in uniqueNames">
+        <div class="list-block media-list" >
+        <ul>
+          <li ng-repeat="product in products | filter:{cat3:name}">
+            <div class="item-content">
+              <div class="item-media"><img ng-src="http://192.168.0.2/bimages/images/{{product.image}}.jpg" width="80"/></img></div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">{{product.name}}</div>
+                  <div class="item-after" style="font-size: 25px;" ng-show="checkCart(product)"> <i class="ion-ios-arrow-up green" ng-click="addItem(product)"></i> </div>
+                </div>
+                <div class="counter">
+                   <div class="item-subtitle">{{product.quantity}}</div>
+                   <div class="item-after" style="font-size: 20px; padding-right: 1.5px;" ng-bind="checkQty(product)" ng-show="checkCart(product)"></div>
+                   <div class="item-after" style="font-size: 25px;" ng-hide="checkCart(product)"> <i class="ion-plus-circled green" ng-click="addItem(product)" ></i> </div>
+                </div>
+                <div class="down">
+                   <div class="item-text">{{product.sp | currency:"₹"}}</div>
+                   <div class="item-after" style="font-size: 25px;" ng-show="checkCart(product)"> <i class="ion-ios-arrow-down green" ng-click="minusItem(product)"></i></div>
+                </div>
+
+              </div></div>
+            </li>
+
+        </ul>
+      </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

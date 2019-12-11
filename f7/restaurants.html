@@ -1,0 +1,22 @@
+
+<div data-page="reslist" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="#" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Restaurants</div>
+      <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="list-block">
+         <ul>
+           <li class="item-content" ng-repeat="name in reslist" ng-click="foodPageload(name.name)">
+             <div class="item-inner" style="justify-content: center;">
+               <div class="item-title">{{name.name}}</div>
+             </div>
+           </li>
+
+         </ul>
+       </div>
+    </div>
+  </div>

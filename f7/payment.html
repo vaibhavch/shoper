@@ -1,0 +1,100 @@
+
+<div data-page="payment" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="index.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Payment</div>
+      <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+
+  <div class="toolbar toolbar-bottom">
+
+          <a href="#" class="link" ng-click="processorder()">Submit</a>
+
+  </div>
+
+  <div class="page-content">
+
+
+
+
+<form id="paymentform">
+
+  <div class="list-block">
+      <ul>
+
+        <li>
+          <label class="label-radio item-content">
+            <input type="radio" name="payment-radio" value="ON" />
+            <div class="item-media"><i class="icon icon-form-radio"></i></div>
+            <div class="item-inner">
+              <div class="item-title titlewrap">Pay Online</div>
+            </div>
+          </label>
+        </li>
+
+        <li>
+          <label class="label-radio item-content">
+            <input type="radio" name="payment-radio" value="CS" />
+            <div class="item-media"><i class="icon icon-form-radio"></i></div>
+            <div class="item-inner">
+              <div class="item-title titlewrap">Cash on Delivery</div>
+            </div>
+          </label>
+        </li>
+
+
+   <div ng-show="showcoupon">
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">Coupon Code</div>
+            <div class="item-input">
+              <input type="text" name="coupon">
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="button button-raised" ng-click="couponapply()">Apply</a>
+
+  </div>
+
+      </ul>
+    </div>
+
+
+    </form>
+
+    <div class="item-content" ng-show="showcoupon">
+
+  <div class="content-block inset">
+     <div class="content-block-inner">
+       <div class="row">
+           <div class="col-70">Wallet Discount</div>
+           <div class="col-30">Rs.{{wallet}}</div>
+        </div>
+        <div class="row">
+            <div class="col-70">Coupon Discount</div>
+            <div class="col-30">Rs.{{couponoff}}</div>
+         </div>
+
+        </div>
+   </div>
+
+      </div>
+
+
+      <div class="content-block inset">
+         <div class="content-block-inner">
+              <h3>Total Amount to Pay -  Rs.{{paytotal}}</h3>
+
+            </div>
+       </div>
+
+
+    </div>
+
+
+
+  </div>
+</div>
